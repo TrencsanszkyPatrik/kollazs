@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Képlink feladat</title>
 
     <style>
-
         body {
             background-color: brown;
         }
@@ -47,13 +47,13 @@
             border-radius: 5px;
         }
 
-        a {
+        .visszagomb {
             text-decoration: none;
             color: black;
         }
 
 
-        .vissza{
+        .vissza {
             border: 1px solid black;
             width: 250px;
             background-color: bisque;
@@ -66,27 +66,55 @@
         }
 
         .vissza:hover {
-            background-color: rgb(209, 198, 181);;
+            background-color: rgb(209, 198, 181);
+            ;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        .aktualis {
+            background-color: rgb(197, 46, 46);
+        }
+
+        a {
+            background-color: antiquewhite;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 25px;
         }
 
     </style>
 
-  </head>
-  <body>
-      <div class="hatter2">
-      <div class="hatter">
-    <h1>Trencsánszky Patrik</h1>
-    <p>Képlink feladat</p>
+</head>
 
-    <a href="" target="_blank">
-      <img src="https://m.blog.hu/sm/smaragdanimesarkany/image/attack-on-titan-season-3-characters-poster.jpg"/>
-    </a>
+<body>
+    <div class="hatter2">
+        <div class="hatter">
+            <h1>Trencsánszky Patrik</h1>
+            <nav>
+                <a href="index.html">FŐOLDAL</a>
+                <a href="listak.html">Listák</a>
+                <a class="aktualis" href="keplink.html">Képlink</a>
+                <a href="orarend.html">Órarend</a>
+                <a href="stilus.html">Stílus</a>
+            </nav>
+            <p>Képlink feladat</p>
 
-    <div class="vissza">
+            
 
-        <a href="index.html">VISSZA</a>
+            <a href="" target="_blank">
+                <img
+                    src="https://m.blog.hu/sm/smaragdanimesarkany/image/attack-on-titan-season-3-characters-poster.jpg" />
+            </a>
+
+            <div class="vissza">
+
+                <a class="visszagomb" href="index.html">VISSZA</a>
+            </div>
+        </div>
     </div>
-    </div>
-</div>
-  </body>
+</body>
+
 </html>

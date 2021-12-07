@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/x-icon" href="https://cdn.xxl.thumbs.canstockphoto.hu/24-%C3%B3ra-%C3%B3ra-ikon-%C3%A1bra_csp26397621.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ÓRAREND</title>
 
@@ -33,7 +32,7 @@
         
         }
 
-        a {
+        .visszagomb {
             text-decoration: none;
             color: black;
         }
@@ -73,6 +72,22 @@
             background-color: rgb(209, 198, 181);;
         }
 
+        nav {
+            text-align: center;
+        }
+
+        a {
+            background-color: antiquewhite;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 25px;
+        }
+
+        .aktualis {
+            background-color: rgb(197, 46, 46);
+        }
+
+
     </style>
 
 </head>
@@ -82,6 +97,14 @@
     <div class="hatter2"><div class="hatter">
 
     <center><h1>9.E Órarend</h1></center>
+
+    <nav>
+        <a href="index.html">FŐOLDAL</a>
+        <a href="listak.html">Listák</a>
+        <a href="keplink.html">Képlink</a>
+        <a class="aktualis" href="orarend.html">Órarend</a>
+        <a href="stilus.html">Stílus</a>
+    </nav>
 
     <table border="2px" style="text-align: center;">
         <tr style="background-color: beige;">
@@ -173,7 +196,7 @@
 
     <div class="vissza">
 
-        <a href="index.html">VISSZA</a>
+        <a class="visszagomb" href="index.html">VISSZA</a>
 
     </div>
 
