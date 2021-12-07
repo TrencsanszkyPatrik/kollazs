@@ -12,15 +12,22 @@
             font-family: monospace;
         }
 
+
+    
+
         table {
             margin-left: auto;
             margin-right: auto;
             border: 3px solid black;
             background-color: gray;
         }
-
         
-        th, td {
+        table:hover {
+            background-color: black;
+        }
+
+        th,
+        td {
             padding: 8px;
             text-align: center;
             border-bottom: 1px solid #ddd;
@@ -29,7 +36,7 @@
         h1 {
             text-align: center;
             text-decoration: underline;
-        
+
         }
 
         .visszagomb {
@@ -56,7 +63,7 @@
         }
 
 
-        .vissza{
+        .vissza {
             border: 1px solid black;
             width: 250px;
             background-color: bisque;
@@ -69,11 +76,13 @@
         }
 
         .vissza:hover {
-            background-color: rgb(209, 198, 181);;
+            background-color: rgb(209, 198, 181);
+            ;
         }
 
         nav {
             text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         a {
@@ -86,121 +95,123 @@
         .aktualis {
             background-color: rgb(197, 46, 46);
         }
-
-
     </style>
 
 </head>
 
 <body>
 
-    <div class="hatter2"><div class="hatter">
+    <div class="hatter2">
+        <div class="hatter">
 
-    <center><h1>9.E Órarend</h1></center>
+            <center>
+                <h1>9.E Órarend</h1>
+            </center>
 
-    <nav>
-        <a href="index.html">FŐOLDAL</a>
-        <a href="listak.html">Listák</a>
-        <a href="keplink.html">Képlink</a>
-        <a class="aktualis" href="orarend.html">Órarend</a>
-        <a href="stilus.html">Stílus</a>
-    </nav>
+            <nav>
+                <a href="index.html">FŐOLDAL</a>
+                <a href="listak.html">Listák</a>
+                <a href="keplink.html">Képlink</a>
+                <a class="aktualis" href="orarend.html">Órarend</a>
+                <a href="stilus.html">Stílus</a>
+            </nav>
 
-    <table border="2px" style="text-align: center;">
-        <tr style="background-color: beige;">
-            <th>Óra</th>
-            <th>Hétfő</th>
-            <th>Kedd</th>
-            <th>Szerda</th>
-            <th>Csütörtök</th>
-            <th>Péntek</th>
-        </tr>
+            <table border="2px" style="text-align: center;">
+                <tr style="background-color: beige;">
+                    <th>Óra</th>
+                    <th>Hétfő</th>
+                    <th>Kedd</th>
+                    <th>Szerda</th>
+                    <th>Csütörtök</th>
+                    <th>Péntek</th>
+                </tr>
 
-        <tr>
-            <td style="background-color: bisque;">0. <br>07:15-08:00</td>
-            <td style="background-color: rgb(209, 198, 181);">Programozás alapok</td>
-            <td style="background-color: rgb(209, 198, 181);">-</td>
-            <td style="background-color: rgb(209, 198, 181);">-</td>
-            <td style="background-color: rgb(209, 198, 181);">-</td>
-            <td style="background-color: rgb(209, 198, 181);">Testnevelés</td>
+                <tr>
+                    <td style="background-color: bisque;">0. <br>07:15-08:00</td>
+                    <td style="background-color: rgb(209, 198, 181);">Programozás alapok</td>
+                    <td style="background-color: rgb(209, 198, 181);">-</td>
+                    <td style="background-color: rgb(209, 198, 181);">-</td>
+                    <td style="background-color: rgb(209, 198, 181);">-</td>
+                    <td style="background-color: rgb(209, 198, 181);">Testnevelés</td>
 
-        </tr>
+                </tr>
 
-        <tr>
-            <td style="background-color: bisque;">1. <br>08:00-08:45</td>
-            <td style="background-color: rgb(209, 198, 181);">Programozás alapok</td>
-            <td style="background-color: rgb(209, 198, 181);">Angol nyelv</td>
-            <td style="background-color: rgb(209, 198, 181);">Matematika</td>
-            <td style="background-color: rgb(209, 198, 181);">Magyar nyelv és irodalom</td>
-            <td style="background-color: rgb(209, 198, 181);">Testnevelés</td>
-        </tr>
+                <tr>
+                    <td style="background-color: bisque;">1. <br>08:00-08:45</td>
+                    <td style="background-color: rgb(209, 198, 181);">Programozás alapok</td>
+                    <td style="background-color: rgb(209, 198, 181);">Angol nyelv</td>
+                    <td style="background-color: rgb(209, 198, 181);">Matematika</td>
+                    <td style="background-color: rgb(209, 198, 181);">Magyar nyelv és irodalom</td>
+                    <td style="background-color: rgb(209, 198, 181);">Testnevelés</td>
+                </tr>
 
-        <tr>
-            <td style="background-color: bisque;">2. <br>08:55-09:40</td>
-            <td style="background-color: rgb(209, 198, 181);">Komplex természettudomány</td>
-            <td style="background-color: rgb(209, 198, 181);">Magyar nyelv és irodalom</td>
-            <td style="background-color: rgb(209, 198, 181);">Matematika (komp)</td>
-            <td style="background-color: rgb(209, 198, 181);">Matematika</td>
-            <td style="background-color: rgb(209, 198, 181);">IKT projektmunka</td>
-        </tr>
+                <tr>
+                    <td style="background-color: bisque;">2. <br>08:55-09:40</td>
+                    <td style="background-color: rgb(209, 198, 181);">Komplex természettudomány</td>
+                    <td style="background-color: rgb(209, 198, 181);">Magyar nyelv és irodalom</td>
+                    <td style="background-color: rgb(209, 198, 181);">Matematika (komp)</td>
+                    <td style="background-color: rgb(209, 198, 181);">Matematika</td>
+                    <td style="background-color: rgb(209, 198, 181);">IKT projektmunka</td>
+                </tr>
 
-        <tr>
-            <td style="background-color: bisque;">3. <br>09:50-10:35</td>
-            <td style="background-color: rgb(209, 198, 181);">Angol nyelv</td>
-            <td style="background-color: rgb(209, 198, 181);">Osztályfőnöki</td>
-            <td style="background-color: rgb(209, 198, 181);">Testnevelés</td>
-            <td style="background-color: rgb(209, 198, 181);">Történelem</td>
-            <td style="background-color: rgb(209, 198, 181);">Történelem</td>
-        </tr>
+                <tr>
+                    <td style="background-color: bisque;">3. <br>09:50-10:35</td>
+                    <td style="background-color: rgb(209, 198, 181);">Angol nyelv</td>
+                    <td style="background-color: rgb(209, 198, 181);">Osztályfőnöki</td>
+                    <td style="background-color: rgb(209, 198, 181);">Testnevelés</td>
+                    <td style="background-color: rgb(209, 198, 181);">Történelem</td>
+                    <td style="background-color: rgb(209, 198, 181);">Történelem</td>
+                </tr>
 
-        <tr>
-            <td style="background-color: bisque;">4. <br>10:45-11:30</td>
-            <td style="background-color: rgb(209, 198, 181);">Informatika és Távközlés</td>
-            <td style="background-color: rgb(209, 198, 181);">Komplex természettudomány</td>
-            <td style="background-color: rgb(209, 198, 181);">Komplex természettudomány</td>
-            <td style="background-color: rgb(209, 198, 181);">Angol nyelv</td>
-            <td style="background-color: rgb(209, 198, 181);">Matematika</td>
-        </tr>
+                <tr>
+                    <td style="background-color: bisque;">4. <br>10:45-11:30</td>
+                    <td style="background-color: rgb(209, 198, 181);">Informatika és Távközlés</td>
+                    <td style="background-color: rgb(209, 198, 181);">Komplex természettudomány</td>
+                    <td style="background-color: rgb(209, 198, 181);">Komplex természettudomány</td>
+                    <td style="background-color: rgb(209, 198, 181);">Angol nyelv</td>
+                    <td style="background-color: rgb(209, 198, 181);">Matematika</td>
+                </tr>
 
-        <tr>
-            <td style="background-color: bisque;">5. <br>11:40-12:25</td>
-            <td style="background-color: rgb(209, 198, 181);">Informatika és Távközlés</td>
-            <td style="background-color: rgb(209, 198, 181);">Magyar nyelv (komp)</td>
-            <td style="background-color: rgb(209, 198, 181);">Magyar nyelv és irodalom</td>
-            <td style="background-color: rgb(209, 198, 181);">Testnevelés</td>
-            <td style="background-color: rgb(209, 198, 181);">Magyar nyelv és irodalom</td>
-        </tr>
+                <tr>
+                    <td style="background-color: bisque;">5. <br>11:40-12:25</td>
+                    <td style="background-color: rgb(209, 198, 181);">Informatika és Távközlés</td>
+                    <td style="background-color: rgb(209, 198, 181);">Magyar nyelv (komp)</td>
+                    <td style="background-color: rgb(209, 198, 181);">Magyar nyelv és irodalom</td>
+                    <td style="background-color: rgb(209, 198, 181);">Testnevelés</td>
+                    <td style="background-color: rgb(209, 198, 181);">Magyar nyelv és irodalom</td>
+                </tr>
 
-        <tr>
-            <td style="background-color: bisque;">6. <br>12:45-13:30</td>
-            <td style="background-color: rgb(209, 198, 181);">Informatika és Távközlés</td>
-            <td style="background-color: rgb(209, 198, 181);">Matematika</td>
-            <td style="background-color: rgb(209, 198, 181);">Történelem</td>
-            <td style="background-color: rgb(209, 198, 181);">-</td>
-            <td style="background-color: rgb(209, 198, 181);">Digitális kultúra</td>
+                <tr>
+                    <td style="background-color: bisque;">6. <br>12:45-13:30</td>
+                    <td style="background-color: rgb(209, 198, 181);">Informatika és Távközlés</td>
+                    <td style="background-color: rgb(209, 198, 181);">Matematika</td>
+                    <td style="background-color: rgb(209, 198, 181);">Történelem</td>
+                    <td style="background-color: rgb(209, 198, 181);">-</td>
+                    <td style="background-color: rgb(209, 198, 181);">Digitális kultúra</td>
 
-        </tr>
+                </tr>
 
-        <tr>
-            <td style="background-color: bisque;">7. <br>13:35-14:20</td>
-            <td style="background-color: rgb(209, 198, 181);">-</td>
-            <td style="background-color: rgb(209, 198, 181);">IKT projektmunka</td>
-            <td style="background-color: rgb(209, 198, 181);">Angol nyelv</td>
-            <td style="background-color: rgb(209, 198, 181);">-</td>
-            <td style="background-color: rgb(209, 198, 181);">Digitális kultúra</td>
-        </tr>
+                <tr>
+                    <td style="background-color: bisque;">7. <br>13:35-14:20</td>
+                    <td style="background-color: rgb(209, 198, 181);">-</td>
+                    <td style="background-color: rgb(209, 198, 181);">IKT projektmunka</td>
+                    <td style="background-color: rgb(209, 198, 181);">Angol nyelv</td>
+                    <td style="background-color: rgb(209, 198, 181);">-</td>
+                    <td style="background-color: rgb(209, 198, 181);">Digitális kultúra</td>
+                </tr>
 
 
 
-    </table>
+            </table>
 
-    <div class="vissza">
+            <div class="vissza">
 
-        <a class="visszagomb" href="index.html">VISSZA</a>
+                <a class="visszagomb" href="index.html">VISSZA</a>
 
+            </div>
+
+        </div>
     </div>
-
-</div></div>
 </body>
 
 </html>
