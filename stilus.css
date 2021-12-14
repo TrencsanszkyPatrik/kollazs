@@ -91,7 +91,6 @@ p {
     border-radius: 10px;
     border: 1px solid #90a583;
     margin: 5px;
-    
     height: 450px;
 }
 
@@ -134,6 +133,37 @@ table {
     background-color: gray;
     border-radius: 10px;
 }
+
+.sidebar {
+    width: 138px;
+    border-radius: 10px;
+    background-color: #593837;
+    height: 450px;
+    top: 1;
+    overflow: hidden;
+}
+
+.sidebar a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #91aa8e;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #998f41;
+    color: white;
+}
+
+.main {
+    margin-top: 30px;
+}
+
 
 table:hover {
     background-color: black;
