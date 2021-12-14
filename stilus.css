@@ -58,11 +58,11 @@ p {
 #navigacioboritas {
     width: 1000px;
     float: left;
-    margin: 0 auto;
 }
 
 #navigacio {
     margin: 5px;
+    margin-bottom: -6px;
 }
 
 #kontentboritas {
@@ -139,7 +139,6 @@ table {
     border-radius: 10px;
     background-color: #593837;
     height: 450px;
-    top: 1;
     overflow: hidden;
 }
 
