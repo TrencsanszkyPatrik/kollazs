@@ -1,119 +1,65 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>Kollázs</title>
+    <link rel="stylesheet" type="text/css" href="stilus.css" />
+  </head>
+  <body>
+    <div id="boritas">
+      <div id="fejlecboritas">
+        <div id="fejlec">
+          <h1>Trencsánszky Patrik 9/E</h1>
+        </div>
+      </div>
+      <div id="navigacioboritas">
+        <div id="navigacio">
+          <nav>
+            <div class="navigacio" id="myTopnav">
+              <a href="index.html">Főoldal</a>
+              <a href="keplink.html" class="aktiv">Képlink</a>
+              <a href="listak.html">Listák</a>
+              <a href="orarend.html">Órarend</a>
+              <a href="stilus.html">Stílusformázás</a>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div id="balboritas">
+        <div id="bal">
+            <a href="https://www.crunchyroll.com/demon-slayer-kimetsu-no-yaiba"><img id="oldal" src="https://m.media-amazon.com/images/I/51hryYseW6L._AC_SY450_.jpg" title="Tanjiro"></a>
+        </div>
+      </div>
+      <div id="kontentboritas">
+        <div id="kontent">
+            <p id="feladat">Képlink feladat</p>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Képlink feladat</title>
-
-    <style>
-        body {
-            background-color: brown;
-        }
-
-        h1 {
-            text-align: center;
-            text-decoration: underline;
-        }
-
-        p {
-            text-align: center;
-            font-style: italic;
-        }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            border-radius: 15px;
-        }
-
-        .hatter {
-            background-color: burlywood;
-            margin-left: auto;
-            margin-right: auto;
-            width: 1000px;
-            height: 660px;
-            border-radius: 5px;
-        }
-
-        .hatter2 {
-            background-color: rgb(184, 148, 102);
-            margin-left: auto;
-            margin-right: auto;
-            width: 1010px;
-            height: 665px;
-            border-radius: 5px;
-        }
-
-        .visszagomb {
-            text-decoration: none;
-            color: black;
-        }
-
-
-        .vissza {
-            border: 1px solid black;
-            width: 250px;
-            background-color: bisque;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 30px;
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .vissza:hover {
-            background-color: rgb(209, 198, 181);
-            ;
-        }
-
-        nav {
-            text-align: center;
-        }
-
-        .aktualis {
-            background-color: rgb(197, 46, 46);
-        }
-
-        a {
-            background-color: antiquewhite;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 25px;
-        }
-    </style>
-
-</head>
-
-<body>
-    <div class="hatter2">
-        <div class="hatter">
-            <h1>Trencsánszky Patrik</h1>
-            <nav>
-                <a href="index.html">FŐOLDAL</a> 
-                <a href="listak.html">Listák</a>
-                <a class="aktualis" href="keplink.html">Képlink</a>
-                <a href="orarend.html">Órarend</a>
-                <a href="stilus.html">Stílus</a>
-            </nav>
-            <p>Képlink feladat</p>
-
-
-
-            <a href="" target="_blank">
-                <img
+            <a href="https://www.crunchyroll.com/aot" target="_blank">
+                <img id="keplink"
                     src="https://m.blog.hu/sm/smaragdanimesarkany/image/attack-on-titan-season-3-characters-poster.jpg" />
             </a>
 
-            <div class="vissza">
-
-                <a class="visszagomb" href="index.html">VISSZA</a>
-            </div>
         </div>
+      </div>
+      <div id="jobbboritas">
+        <div id="jobb">
+          <a href="https://www.crunchyroll.com/demon-slayer-kimetsu-no-yaiba"><img id="oldal" src="https://m.media-amazon.com/images/I/51YYuxoei2L._AC_SY450_.jpg" title="Nezuko"></a>
+        </div>
+      </div>
+      <div id="lablecboritas">
+        <div id="lablec">
+            <p style="text-align: right;"> Jelenlegi dátum: <span id="datum"></span></p>
+        </div>
+      </div>
     </div>
-</body>
 
+    <script>
+      n = new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("datum").innerHTML = m + "/" + d + "/" + y;
+    </script>
+  </body>
 </html>

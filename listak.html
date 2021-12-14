@@ -1,127 +1,77 @@
+
+
+
+
 <!DOCTYPE html>
-<html lang="hu">
+<html>
+  <head>
+    <title>Kollázs</title>
+    <link rel="stylesheet" type="text/css" href="stilus.css" />
+  </head>
+  <body>
+    <div id="boritas">
+      <div id="fejlecboritas">
+        <div id="fejlec">
+          <h1>Trencsánszky Patrik 9/E</h1>
+        </div>
+      </div>
+      <div id="navigacioboritas">
+        <div id="navigacio">
+          <nav>
+            <div class="navigacio" id="myTopnav">
+              <a href="index.html">Főoldal</a>
+              <a href="keplink.html">Képlink</a>
+              <a href="listak.html" class="aktiv">Listák</a>
+              <a href="orarend.html">Órarend</a>
+              <a href="stilus.html">Stílusformázás</a>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div id="balboritas">
+        <div id="bal">
+            <a href="https://www.crunchyroll.com/demon-slayer-kimetsu-no-yaiba"><img id="oldal" src="https://m.media-amazon.com/images/I/51hryYseW6L._AC_SY450_.jpg" title="Tanjiro"></a>
+        </div>
+      </div>
+      <div id="kontentboritas">
+        <div id="kontent">
+            <h2>Kedvenc tantárgyaim:</h2>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listák</title>
-
-    <style>
-        h1 {
-            text-align: center;
-            text-decoration: underline;
-        }
-
-        h3 {
-            text-align: center;
-        }
-
-        p {
-            margin-left: 10px;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-        a {
-            text-decoration: none;
-            color: black;
-        }
-
-        body {
-            background-color: brown;
-        }
-
-        .vissza {
-            border: 1px solid black;
-            width: 250px;
-            background-color: bisque;
-            border-radius: 5px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 30px;
-            margin-top: 30px;
-            text-align: center;
-        }
-
-        .vissza:hover {
-            background-color: rgb(209, 198, 181);
-            ;
-        }
-
-        .hatter {
-            background-color: burlywood;
-            margin-left: auto;
-            margin-right: auto;
-            width: 500px;
-            height: 450px;
-            border-radius: 5px;
-        }
-
-        .hatter2 {
-            background-color: rgb(184, 148, 102);
-            margin-left: auto;
-            margin-right: auto;
-            width: 510px;
-            height: 455px;
-            border-radius: 5px;
-        }
-
-        nav {
-            text-align: center;
-        }
-
-        a {
-            background-color: antiquewhite;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 25px;
-        }
-
-        .aktualis {
-            background-color: rgb(197, 46, 46);
-        }
-    </style>
-
-</head>
-
-<body>
-
-    <div class="hatter2">
-        <div class="hatter">
-            <h1>Trencsánszky Patrik</h1>
-
-            <nav>
-                <a href="index.html">FŐOLDAL</a>
-                <a class="aktualis" href="listak.html">Listák</a>
-                <a href="keplink.html">Képlink</a>
-                <a href="orarend.html">Órarend</a>
-                <a href="stilus.html">Stílus</a>
-            </nav>
-            <h3>Listák</h2>
-
-                <p>Kedvenc tantárgyaim:</p>
-
-                <ol>
+                <ol style="font-size: 16px;">
                     <li>IKT Projektmunka</li>
                     <li>Matek</li>
                     <li>Angol</li>
                 </ol>
 
-                <p>Kedvenc szabadidős tevákenységeim:</p>
+                <h2>Kedvenc szabadidős tevákenységeim:</h2>
 
-                <ul>
+                <ul style="font-size: 16px;">
                     <li>Kosárlabdázás</li>
                     <li>Haverokkal való időtöltés</li>
                     <li>Számítógépezés, programozás</li>
                 </ul>
-
-                <div class="vissza">
-
-                    <a class="visszagomb" href="index.html">VISSZA</a>
-
-                </div>
+            </p>
         </div>
+      </div>
+      <div id="jobbboritas">
+        <div id="jobb">
+          <a href="https://www.crunchyroll.com/demon-slayer-kimetsu-no-yaiba"><img id="oldal" src="https://m.media-amazon.com/images/I/51YYuxoei2L._AC_SY450_.jpg" title="Nezuko"></a>
+        </div>
+      </div>
+      <div id="lablecboritas">
+        <div id="lablec">
+            <p style="text-align: right;"> Jelenlegi dátum: <span id="datum"></span></p>
+        </div>
+      </div>
     </div>
-</body>
 
+    <script>
+      n = new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("datum").innerHTML = m + "/" + d + "/" + y;
+    </script>
+  </body>
 </html>
