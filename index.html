@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>Kollázs</title>
-    <link rel="stylesheet" type="text/css" href="stilus.css" />
+    <link rel="stylesheet" type="text/css" href="css/stilus2.css" />
   </head>
   <body>
     <div id="boritas">
@@ -37,7 +37,7 @@
       </div>
       <div id="kontentboritas">
         <div id="kontent">
-          <img src="collage.jpg" alt="Kollazskepem" width="500" />
+          <img class="kollazs" src="img/collage.jpg" alt="Kollazskepem" width="500px"/>
         </div>
       </div>
       <div id="jobbboritas">
@@ -50,14 +50,13 @@
           <p style="text-align: right;"> Jelenlegi dátum: <span id="datum"></span></p>
         </div>
       </div>
-    </div>
-
+    </div></div>
     <script>
       n = new Date();
       y = n.getFullYear();
       m = n.getMonth() + 1;
       d = n.getDate();
-      document.getElementById("datum").innerHTML = m + "/" + d + "/" + y;
+      document.getElementById("datum").innerHTML = y + "/" + m + "/" + d;
     </script>
   </body>
 </html>
