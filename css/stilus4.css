@@ -194,14 +194,17 @@ td {
     border-bottom-right-radius: 0px;
   }
   
-.navigacio a {
+  .navigacio a {
     display: inline-block;
-    margin: auto;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+  }
+  
+  .navigacio a#elso {
+    margin-left: 140px;
   }
   
 .navigacio a:hover {

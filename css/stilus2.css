@@ -170,6 +170,10 @@ table {
   margin-top: 30px;
 }
 
+.zold {
+   background-color: #91aa8e; 
+}
+
 table:hover {
   background-color: black;
 }
@@ -190,12 +194,15 @@ td {
 
 .navigacio a {
   display: inline-block;
-  margin: auto;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+.navigacio a#elso {
+  margin-left: 140px;
 }
 
 .navigacio a:hover {
