@@ -1,62 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Kollázs</title>
-    <link rel="stylesheet" type="text/css" href="css/stilus2.css" />
-  </head>
-  <body>
-    <div id="boritas">
-      <div id="fejlecboritas">
-        <div id="fejlec">
-          <h1>Trencsánszky Patrik 9/E</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Patrik oldala!</title>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="active" href="index.html">Főoldal</a>
+        <a href="keplink.html">Képlink feladat</a>
+        <a href="listak.html">Listák feladat</a>
+        <a href="orarend.html">Órarend feladat</a>
+    </div>
+
+        
+
+
+    <div class="content">
+        <div class="fejlec">
+            <h1 class="kozep">Trencsánszky Patrik oldala!</h1>
         </div>
-      </div>
-      <div id="navigacioboritas">
-        <div id="navigacio">
-          <nav>
-            <div class="navigacio" id="myTopnav">
-              <a href="index.html" id="elso" class="aktiv">Főoldal</a>
-              <a href="keplink.html">Képlink</a>
-              <a href="listak.html">Listák</a>
-              <a href="orarend.html">Órarend</a>
-              <a href="stilus.html">Stílusformázás</a>
-              </a>
-            </div>
-          </nav>
-        </div>
-      </div>
-      <div id="balboritas">
-        <div id="bal">
-            <div class="sidebar">
-              <a href="index.html" class="active">Főoldal</a>
-              <a href="keplink.html">Képlink</a>
-              <a href="listak.html">Listák</a>
-              <a href="orarend.html">Órarend</a>
-              <a href="stilus.html">Stílusformázás</a>
-            </div></div>
-      </div>
-      <div id="kontentboritas">
-        <div id="kontent">
-          <img class="kollazs" src="img/collage.jpg" alt="Kollazskepem" width="500px"/>
-        </div>
-      </div>
-      <div id="jobbboritas">
-        <div id="jobb">
-          <a href="https://www.crunchyroll.com/demon-slayer-kimetsu-no-yaiba"><img id="oldal" src="https://m.media-amazon.com/images/I/51YYuxoei2L._AC_SY450_.jpg" title="Nezuko"></a>
-        </div>
-      </div>
-      <div id="lablecboritas">
-        <div id="lablec">
-          <p style="text-align: right;"> Jelenlegi dátum: <span id="datum"></span></p>
-        </div>
-      </div>
-    </div></div>
-    <script>
-      n = new Date();
-      y = n.getFullYear();
-      m = n.getMonth() + 1;
-      d = n.getDate();
-      document.getElementById("datum").innerHTML = y + "/" + m + "/" + d;
-    </script>
-  </body>
+        <img id="kollazs" src="collage.jpg" class="center">
+
+    </div>
+</body>
 </html>
