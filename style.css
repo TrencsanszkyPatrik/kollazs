@@ -1,3 +1,7 @@
+* {
+  font-family: 'Oswald', sans-serif;
+}
+
 .sidebar {
     margin: 0;
     padding: 0;
@@ -22,7 +26,10 @@
     display: block;
     color: black;
     padding: 16px;
+    font-weight: bold;
+    font-size: larger;
     text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
   }
    
   .sidebar a.active {
@@ -61,6 +68,7 @@
 h1.kozep {
     text-align: center;
     margin-top: 5px;
+    text-decoration: underline;
 }
 
 table {
@@ -77,7 +85,7 @@ table {
     margin-right: -17px;
     margin-top: -6px;
     padding: 5px 0;
-    height: 45px;
+    height: 50px;
 }
 
 #kollazs {
