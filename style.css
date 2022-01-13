@@ -58,7 +58,7 @@
     div.content {margin-left: 0;}
   }
   
-  @media screen and (max-width: 443px) {
+  @media screen and (max-width: 570px) {
     .sidebar a {
       text-align: center;
       float: none;
@@ -102,11 +102,6 @@ table {
     width: 600px;
 }
 
-@media only screen and (max-width: 480px) {
-  #kollazs {
-    width: 100%;
-  }
-}
 
 #keplink {
     border-radius: 10px;
@@ -119,7 +114,22 @@ table {
   #keplink {
     width: 100%;
   }
+
+  #kollazs {
+    width: 100%;
+  }
 }
+
+@media screen and (max-width: 768px) {
+  #keplink {
+    width: 100%;
+  }
+
+  #kollazs {
+    width: 100%;
+  }
+}
+
 
 .center {
     display: block;
