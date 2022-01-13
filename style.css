@@ -76,6 +76,13 @@ table {
     background-color: gray;
     border-radius: 10px;
     margin-top: 20px;
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    table {
+      width: 1%;
+    }
   }
 
 
@@ -95,11 +102,23 @@ table {
     width: 600px;
 }
 
+@media only screen and (max-width: 480px) {
+  #kollazs {
+    width: 100%;
+  }
+}
+
 #keplink {
     border-radius: 10px;
     margin-top: 50px;
     width: 800px;
     box-shadow: 15px 15px 15px 15px #C09F75;
+}
+
+@media only screen and (max-width: 480px) {
+  #keplink {
+    width: 100%;
+  }
 }
 
 .center {
