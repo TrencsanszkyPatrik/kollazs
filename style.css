@@ -58,7 +58,7 @@
     div.content {margin-left: 0;}
   }
   
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 443px) {
     .sidebar a {
       text-align: center;
       float: none;
