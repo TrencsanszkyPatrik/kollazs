@@ -3,6 +3,12 @@ h2.top {
   margin-top: 25px;
 }
 
+.text {
+  font-family: 'Amatic SC', cursive;
+  font-size: 50px;
+  color: aliceblue;
+}
+
 h1.cimsor {
     text-align: center;
   }
@@ -30,11 +36,6 @@ h1.cimsor {
     transition: 1s;
   }
 
-  @media only screen and (max-width: 1490px) {
-    img.egy {
-      width: 10px;
-    }
-  }
 
   img.egy {
     border: 1px solid black;
@@ -54,6 +55,7 @@ h1.cimsor {
   div {
     display: inline-block;
   }
+
   
   
   h2 {
