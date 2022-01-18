@@ -1,4 +1,8 @@
 
+h2.top {
+  margin-top: 25px;
+}
+
 h1.cimsor {
     text-align: center;
   }
@@ -7,8 +11,15 @@ h1.cimsor {
     display: flex;
     justify-content: center;
   }
-  
-  
+
+  .link {
+    color: rgb(145, 124, 107);
+  }
+
+  .link:hover {
+    color: black;
+  }
+
   img {
     border: 1px solid black;
     margin: 30px;
@@ -17,6 +28,12 @@ h1.cimsor {
     border-radius: 22px;
     display: inline-block;
     transition: 1s;
+  }
+
+  @media only screen and (max-width: 1490px) {
+    img.egy {
+      width: 10px;
+    }
   }
 
   img.egy {
@@ -43,4 +60,10 @@ h1.cimsor {
     text-align: center;
     margin-top: -25px;
     font-size: 35px;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    background-color: #b38a58;
   }
