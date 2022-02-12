@@ -2,6 +2,18 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 800;
+  background-color: #5a5e2d;
+  color: white;
+  text-align: center;
+}
+
 .sidebar {
     margin: 0;
     padding: 0;
