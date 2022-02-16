@@ -35,24 +35,56 @@
 
 <body>
     <div class="sidebar">
-        <a class="active" href="index.html">Főoldal</a>
+        <a href="index.html">Főoldal</a>
         <a href="keplink.html">Képlink feladat</a>
         <a href="listak.html">Listák feladat</a>
         <a href="orarend.html">Órarend feladat</a>
         <a href="evszakok.html">Évszakok feladat</a>
-        <a href="urlap.html">Űrlap</a>
+        <a class="active" href="urlap.html">Űrlap</a>
     </div>
 
 
 
 
     <div class="content">
+        
         <div class="fejlec">
             <h1 class="kozep">Trencsánszky Patrik oldala!</h1>
         </div>
-        <div style="overflow-x:auto;">
-            <img id="kollazs" src="img/collage.jpg" class="center">
-        </div>
+        <form name="rendeles">
+            <h1 class="pizza">Pizza Rendelés</h1>
+            <fieldset>
+                <legend>Vevő adatai:</legend>
+                <p><labe id="name">Név: <input style="margin-left: 36px; width: 250px;" type="text" name="nev">
+                        </label></p>
+                <p><label id="number">Telefon: <input  style="margin-left: 15px; width: 250px;" type="tel" name="telefon" size="10"></label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Pizza mérete</legend>
+                <p><label><input type="radio" name="meret" value="kicsi">kicsi</label></p>
+                <p><label><input type="radio" name="meret" value="nagy">nagy</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Feltétek</legend>
+                <select>
+                    <option>Kérlek válassz feltétet</option>
+                    <option value="sajt">Sajt</option>
+                    <option value="szalámi">Szalámi</option>
+                    <option value="sonka">Sonka</option>
+                </select>    
+            
+            </fieldset>
+            <fieldset>
+                <legend>Végezetül</legend>
+                <p><label>mennyiség: <input type="number" name="mennyiseg"> db</label></p>
+                <p><label>egyéb kívánságok: <textarea name="egyeb"></textarea></label></p>
+                <p><label>Kért szállítási idő: <input type="time" name="kiszallitas"></label></p>
+                <br>
+                <input class="button" type="reset" name="visszaallitas">
+                <input class="button"  type="submit" name="kuldes">
+            </fieldset>
+        </form>
+
     </div>
 
     <div class="footer">

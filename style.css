@@ -2,6 +2,42 @@
   font-family: 'Oswald', sans-serif;
 }
 
+fieldset {
+  width: 360px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.pizza {
+  font-size: 25px;
+  text-align: center;
+}
+
+#name, #number {
+  font-size: 20px;
+}
+
+label {
+  font-size: 18px;
+}
+
+select {
+  width: 350px;
+  height: 35px;
+  font-size: 20px;
+}
+
+.button {
+  width: 150px;
+  height: 30px;
+  display: inline-block;
+}
+
+legend {
+  font-size: 26px;
+}
+
 .footer {
   position: fixed;
   left: 0;
