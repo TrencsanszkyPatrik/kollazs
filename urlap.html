@@ -52,35 +52,36 @@
             <h1 class="kozep">Trencsánszky Patrik oldala!</h1>
         </div>
         <form name="rendeles">
-            <h1 class="pizza">Pizza Rendelés</h1>
+            <h1 class="pizza">Gyros Rendelés</h1>
             <fieldset>
-                <legend>Vevő adatai:</legend>
+                <legend>Adatok</legend>
                 <p><labe id="name">Név: <input style="margin-left: 36px; width: 250px;" type="text" name="nev">
                         </label></p>
-                <p><label id="number">Telefon: <input  style="margin-left: 15px; width: 250px;" type="tel" name="telefon" size="10"></label></p>
+                <p><label id="number">Telefonszám: <input  style="margin-left: 15px; width: 250px;" type="tel" name="telefon" size="10"></label></p>
             </fieldset>
             <fieldset>
-                <legend>Pizza mérete</legend>
-                <p><label><input type="radio" name="meret" value="kicsi">kicsi</label></p>
+                <legend>Gyros mérete</legend>
+                <p><label><input type="radio" name="meret" value="kicsi">pitában</label></p>
+                <p><label><input type="radio" name="meret" value="kozepes">közepes</label></p>
                 <p><label><input type="radio" name="meret" value="nagy">nagy</label></p>
             </fieldset>
             <fieldset>
                 <legend>Feltétek</legend>
                 <select>
-                    <option>Kérlek válassz feltétet</option>
-                    <option value="sajt">Sajt</option>
-                    <option value="szalámi">Szalámi</option>
-                    <option value="sonka">Sonka</option>
+                    <option>Kérlek válaszd ki milyen gyrost szeretnél</option>
+                    <option value="sajt">sima</option>
+                    <option value="szalámi">dupla húsos</option>
+                    <option value="sonka">egyéb</option>
                 </select>    
             
             </fieldset>
             <fieldset>
-                <legend>Végezetül</legend>
-                <p><label>mennyiség: <input type="number" name="mennyiseg"> db</label></p>
-                <p><label>egyéb kívánságok: <textarea name="egyeb"></textarea></label></p>
+                <legend>Utoljára pedig,</legend>
+                <p><label>Hány gyrost szeretnél: <input type="number" name="mennyiseg"> db</label></p>
+                <p><label>egyéb feltétel: <textarea name="egyeb"></textarea></label></p>
                 <p><label>Kért szállítási idő: <input type="time" name="kiszallitas"></label></p>
                 <br>
-                <input class="button" type="reset" name="visszaallitas">
+                <input class="button" type="reset" name="reset">
                 <input class="button"  type="submit" name="kuldes">
             </fieldset>
         </form>
