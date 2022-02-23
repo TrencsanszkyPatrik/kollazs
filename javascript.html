@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT ALAPOK</title>
+</head>
+<body>
+
+    <input type="text" id="szam1">
+    <input type="text" id="szam2"> <br>
+    <button onclick="osszeadas()">Összeadás</button>
+    <button onclick="kivonas()">Kivonás</button>
+    <button onclick="szorzas()">Szorzás</button>
+    <button onclick="osztas()">Osztás</button>
+    <p>Az összeg: <span id="osszeg"></span></p>
+
+    
+    <script>
+        // var szam1 = Number(prompt("Add meg a számot!"));
+        // var szam2 = Number(prompt("Add meg a számot!"));
+
+        // document.write("Az eredmény: ",  szam1+szam2)
+
+        var nev = prompt("Add meg a neved");
+        alert('Üdv az oldalon: ' + nev)
+
+
+        function osszeadas() {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var osszeg = +szam1 + +szam2;
+            document.getElementById("osszeg").innerHTML = osszeg
+        }
+
+        function kivonas() {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var osszeg = +szam1 - +szam2;
+            document.getElementById("osszeg").innerHTML = osszeg
+        }
+        function szorzas() {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var osszeg = +szam1 * +szam2;
+            document.getElementById("osszeg").innerHTML = osszeg
+        }
+        function osztas() {
+            var szam1 = document.getElementById("szam1").value;
+            var szam2 = document.getElementById("szam2").value;
+            var osszeg = +szam1 / +szam2;
+            document.getElementById("osszeg").innerHTML = osszeg
+        }
+
+    </script>
+
+
+</body>
+</html>
