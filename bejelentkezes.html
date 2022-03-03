@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bejelentkezés</title>
+</head>
+
+<body>
+
+    
+    <form action="javascript:void(0);">
+        <h1 style="text-align: center;"><b>FONTOS!</b> Egyszerre csak egy aktív felhasználód lehet, az előző elveszik!</h1>
+
+        <div class="center">
+            <label class="form-label">Felhasználónév</label>
+        </div>
+        <input type="text" class="form-control" id="username" />
+
+        <div class="center">
+            <label class="form-label">Jelszó</label>
+        </div>
+        <input type="password" class="form-control" id="pass" />
+
+        <div class="kozep">
+            <button onclick="belep(username.value, pass.value)">
+                Bejelentkezés
+            </button>
+            <button onclick="beir(username.value, pass.value)">Regisztráció</button>
+            <button onclick="torles()">Profil törlése</button>
+            <div id="also">
+                <button onclick="listaz()">
+                    Ha elfelejtetted az adataidat, akkor nyomj erre a gombra:
+                </button>
+            </div>
+    </form>
+
+    <p id="lista"></p>
+    <p id="sikertelen"></p>
+
+    <script>
+        function torles() {
+            localStorage.clear();
+        }
+
+        function listaz() {
+            var kk = ""
+            for (i = 0; i < localStorage.length; i++) {
+                key = localStorage.key(i);
+                kk += ("email:" + key + " | jelszó:" + localStorage.getItem(key) + "<br>");
+            }
+            document.getElementById("lista").innerHTML = kk
+        }
+
+        function beir(felh, jelsz) {
+            localStorage.setItem(felh, jelsz)
+
+            alert("Sikeresen regisztráltál!")
+        }
+        function belep(username, password) {
+            if (username == key) {
+                if (password == localStorage.getItem(key)) {
+                    alert("Sikeresen beléptél!")
+                    window.open('https://trencsanszkypatrik.github.io/kollazs')
+
+                    let new_window =
+                        open(location, '_self');
+
+                    new_window.close();
+
+                    return false;
+                }
+            }
+            else {
+                document.getElementById("sikertelen").innerHTML = "Nem létezik ilyen felhasználó, próbáld meg újra!"
+            }
+        }
+    </script>
+</body>
+
+</html>

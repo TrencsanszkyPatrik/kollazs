@@ -1,0 +1,73 @@
+form {
+    width: 50%;
+    border-radius: 5px;
+    padding: 50px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+label {
+    font-size: 25px;
+}
+
+.center {
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+input {
+    cursor: text;
+    margin: 0em;
+    padding: 1px 2px;
+    border-width: 5px;
+    border-style: inset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+}
+
+button {
+    border-radius: 5px;
+}
+
+.kozep {
+    text-align: center;
+    margin-top: 26px;
+}
+
+#also {
+    margin-top: 5px;
+}
+
+h1 {
+    margin-top: -50px;
+    color: red;
+}

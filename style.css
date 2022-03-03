@@ -60,6 +60,12 @@ legend {
     overflow: auto;
   }
 
+
+  .kozep {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
   
   
   body {
@@ -193,5 +199,8 @@ ul, li, ul {
   margin-right: auto;
   display: flexbox;
 }
+
+
+
 
 
