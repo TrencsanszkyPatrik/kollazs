@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISZTRÁCIÓ</title>
+
+    <style>
+        fieldset {
+            width: max-content;
+            background-color: antiquewhite;
+            margin: 0 auto 0 auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: black;
+        }
+
+        legend {
+            border: 1px solid rgb(203, 208, 212);
+            border-radius: 5px;
+            background-color: rgba(203, 208, 212, 0.829);
+            text-align: center;
+            font-weight: 900;
+        }
+
+
+        input {
+            width: 250px;
+            text-align: center;
+            border-radius: 10PX;
+            background-color: rgba(245, 243, 240, 0.658);
+        }
+
+        #psw,
+        #psw2 {
+            margin-top: 10px;
+        }
+
+        button {
+            margin-top: 10px;
+            float: right;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid;
+        }
+
+        button:hover {
+            background-color: blanchedalmond;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>REGISZTRÁCIÓ</legend>
+        <input type="email" name="email" id="emailcim" placeholder="Add meg az email címed!"> <br>
+        <input type="password" name="jelszo" id="psw" placeholder="Add meg a jelszavad!"><br>
+        <input type="password" name="jelszo" id="psw2" placeholder="Add meg a jelszavad mégegyszer!"> <br>
+        <button onclick="reg(emailcim.value, psw.value, psw2.value)">REGISZTRÁCIÓ</button>
+    </fieldset>
+
+    <script>
+        
+
+        function reg(user, pass, pass2) {
+         
+
+            if (user != "" && pass != "" && pass2 != "") {
+                if (pass == pass2) {
+                    alert("Regisztrálva: " + user)
+                } else {
+                    alert("Nem egyezik meg a két jelszó")
+                }
+            }
+            else {
+                alert("Helytelen felhasználó!")
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>
