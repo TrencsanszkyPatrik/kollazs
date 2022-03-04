@@ -107,6 +107,14 @@
 
             if (user == key && pass == jelszo) {
                 alert("Sikeresen beléptél!")
+                window.open('https://trencsanszkypatrik.github.io/kollazs')
+
+                    let new_window =
+                        open(location, '_self');
+
+                    new_window.close();
+
+                    return false;
             } else if (user == key && pass != jelszo) {
                 alert("Helytelenül adtad meg jelszavad!")
             } else if (user != key && pass == jelszo) {
