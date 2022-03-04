@@ -34,11 +34,12 @@
         }
 
         #psw,
-        #psw2 {
+        #psw2,
+        #psw3 {
             margin-top: 10px;
         }
 
-        button {
+        .button {
             margin-top: 10px;
             float: right;
             padding: 5px;
@@ -48,6 +49,14 @@
 
         button:hover {
             background-color: blanchedalmond;
+        }
+
+        #asd {
+            margin: 20px auto 0 auto;
+            display: block;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid;
         }
     </style>
 
@@ -60,24 +69,27 @@
         <input type="email" name="email" id="emailcim" placeholder="Add meg az email címed!"> <br>
         <input type="password" name="jelszo" id="psw" placeholder="Add meg a jelszavad!"><br>
         <input type="password" name="jelszo" id="psw2" placeholder="Add meg a jelszavad mégegyszer!"> <br>
-        <button onclick="reg(emailcim.value, psw.value, psw2.value)">REGISZTRÁCIÓ</button>
+        <button class="button" onclick="reg(emailcim.value, psw.value, psw2.value)">REGISZTRÁCIÓ</button>
     </fieldset>
     <br><br><br><br>
     <fieldset>
         <legend>BEJELENTKEZÉS</legend>
         <input type="email" name="email" id="emailcim2" placeholder="Add meg az email címed!"> <br>
         <input type="password" name="jelszo" id="psw3" placeholder="Add meg a jelszavad!"><br>
-        <button onclick="log(emailcim.value, psw.value)">BEJELENTKEZÉS</button>
+        <button class="button" onclick="log(emailcim2.value, psw3.value)">BEJELENTKEZÉS</button>
     </fieldset>
 
+    <button id="asd" onclick="torles()">ADATOK TÖRLÉSE</button>
+
     <script>
-        
+
+
         function reg(user, pass, pass2) {
             if (user != "" && pass != "" && pass2 != "") {
-                if (pass == pass2) { 
+                if (pass == pass2) {
                     alert("Sikeresen regisztráltál!")
-                    localStorage.setItem(user, pass1);
-                } 
+                    localStorage.setItem(user, pass);
+                }
                 else {
                     alert("Nem egyezik meg a két jelszó")
                 }
@@ -85,6 +97,33 @@
             else {
                 alert("Helytelen felhasználó!")
             }
+        }
+
+        function log(user, pass) {
+
+            key = localStorage.key(0);
+            jelszo = localStorage.getItem(key);
+
+
+            if (user == key && pass == jelszo) {
+                alert("Sikeresen beléptél!")
+            } else if (user == key && pass != jelszo) {
+                alert("Helytelenül adtad meg jelszavad!")
+            } else if (user != key && pass == jelszo) {
+                alert("Helytelenül adtad meg felhasználónevet!")
+            } else if (user == "" && pass == "") {
+                alert("Add meg a hiányzó adatokat!")
+            }
+            else {
+                alert("Mindkét adatot helytelenül adtad meg!")
+            }
+
+            // alert(key);
+            // alert(localStorage.getItem(key))
+        }
+
+        function torles() {
+            localStorage.clear()
         }
 
     </script>
