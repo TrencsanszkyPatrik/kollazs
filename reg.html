@@ -62,24 +62,29 @@
         <input type="password" name="jelszo" id="psw2" placeholder="Add meg a jelszavad mégegyszer!"> <br>
         <button onclick="reg(emailcim.value, psw.value, psw2.value)">REGISZTRÁCIÓ</button>
     </fieldset>
+    <br><br><br><br>
+    <fieldset>
+        <legend>BEJELENTKEZÉS</legend>
+        <input type="email" name="email" id="emailcim2" placeholder="Add meg az email címed!"> <br>
+        <input type="password" name="jelszo" id="psw3" placeholder="Add meg a jelszavad!"><br>
+        <button onclick="log(emailcim.value, psw.value)">BEJELENTKEZÉS</button>
+    </fieldset>
 
     <script>
         
-
         function reg(user, pass, pass2) {
-         
-
             if (user != "" && pass != "" && pass2 != "") {
-                if (pass == pass2) {
-                    alert("Regisztrálva: " + user)
-                } else {
+                if (pass == pass2) { 
+                    alert("Sikeresen regisztráltál!")
+                    localStorage.setItem(user, pass1);
+                } 
+                else {
                     alert("Nem egyezik meg a két jelszó")
                 }
             }
             else {
                 alert("Helytelen felhasználó!")
             }
-
         }
 
     </script>
