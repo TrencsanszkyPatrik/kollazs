@@ -5,59 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>REGISZTRÁCIÓ</title>
 
     <style>
-        fieldset {
-            width: max-content;
-            background-color: antiquewhite;
-            margin: 0 auto 0 auto;
-            display: block;
-            border-radius: 15px;
-            box-shadow: rgba(0, 0, 0, 0.26) 5px 5px 5px 5px;
-        }
 
-        legend {
-            border: 1px solid rgb(203, 208, 212);
-            border-radius: 5px;
-            background-color: rgba(203, 208, 212, 0.829);
-            text-align: center;
-            font-weight: 900;
-        }
-
-
-        input {
-            width: 250px;
-            text-align: center;
-            border-radius: 10PX;
-            background-color: rgba(245, 243, 240, 0.658);
-        }
-
-        #psw,
-        #psw2,
-        #psw3 {
-            margin-top: 10px;
-        }
-
-        .button {
-            margin-top: 10px;
-            float: right;
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid;
-        }
-
-        button:hover {
-            background-color: blanchedalmond;
-        }
-
-        #asd {
-            margin: 20px auto 0 auto;
-            display: block;
-            padding: 5px;
-            border-radius: 5px;
-            border: 1px solid;
-        }
     </style>
 
 </head>
@@ -80,62 +32,11 @@
     </fieldset>
 
     <button id="asd" onclick="torles()">ADATOK TÖRLÉSE</button>
+    
+    <button id="asd" onclick="elfelejtett()">ELFELEJTETT JELSZÓ</button>
 
-    <script>
-
-
-        function reg(user, pass, pass2) {
-            if (user != "" && pass != "" && pass2 != "") {
-                if (pass == pass2) {
-                    alert("Sikeresen regisztráltál!")
-                    localStorage.setItem(user, pass);
-                }
-                else {
-                    alert("Nem egyezik meg a két jelszó")
-                }
-            }
-            else {
-                alert("Helytelen felhasználó!")
-            }
-        }
-
-        function log(user, pass) {
-
-            key = localStorage.key(0);
-            jelszo = localStorage.getItem(key);
-
-
-            if (user == key && pass == jelszo) {
-                alert("Sikeresen beléptél!")
-                window.open('https://trencsanszkypatrik.github.io/kollazs')
-
-                    let new_window =
-                        open(location, '_self');
-
-                    new_window.close();
-
-                    return false;
-            } else if (user == key && pass != jelszo) {
-                alert("Helytelenül adtad meg jelszavad!")
-            } else if (user != key && pass == jelszo) {
-                alert("Helytelenül adtad meg felhasználónevet!")
-            } else if (user == "" && pass == "") {
-                alert("Add meg a hiányzó adatokat!")
-            }
-            else {
-                alert("Mindkét adatot helytelenül adtad meg!")
-            }
-
-            // alert(key);
-            // alert(localStorage.getItem(key))
-        }
-
-        function torles() {
-            localStorage.clear()
-        }
-
-    </script>
-
+    <script src="bejelentkezes.js"></script>
+    
 </body>
 
 </html>
