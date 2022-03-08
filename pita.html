@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P</title>
+
+    <style>
+        .adatok  {
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 30px;
+            margin-right: auto;
+            display: block;
+            border: 1px solid black;
+            max-width: 290px;
+        }
+
+        .adatok > button {
+            margin: 0 auto 0 auto;
+            display: block;
+        }
+        
+        input {
+            width: 135px;
+            padding: 5px;
+            border: 1px saddlebrown solid;
+            border-radius: 5px;
+            margin-bottom: 5px;
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+        }
+
+        #aoldal{
+            margin-top: 10px;
+        }
+        
+        img {
+
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        span {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="adatok">
+        <img src="https://www.nkp.hu/tankonyv/matematika_9//img/Szaki09_matek/FI_511010902_szakiskola_9_NKP-116b.png?max_width=2048" alt=""> 
+        
+            <input id="aoldal" type="number" placeholder="Add meg az A oldalt"><br>
+            <input id="boldal" type="number" placeholder="Add meg a B oldalt"><br>
+            <button onclick="szamolas(aoldal.value, boldal.value)">SZÁMÍTÁS</button><br>
+            <span style="text-align: center;" id="eredmeny"></span>
+        </div>
+
+    <script>
+    
+        function szamolas(a, b) {    
+            var eredmeny = Math.sqrt(+a*a + +b*b)
+            document.getElementById('eredmeny').innerHTML = eredmeny
+        }
+
+</script>
+
+</body>
+</html>
