@@ -2,62 +2,56 @@
 <html lang="en">
 
 <head>
-    <link rel="apple-touch-icon" sizes="57x57" href="favic/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favic/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favic/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favic/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favic/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favic/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favic/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favic/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favic/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favic/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favic/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favic/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favic/favicon-16x16.png">
-    <link rel="manifest" href="favic/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="favic/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
 
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Oswald:wght@300&display=swap"
-        rel="stylesheet">
-    <title>Patrik oldala!</title>
+    <title>REGISZTRÁCIÓ</title>
 </head>
 
 <body>
-    <div class="sidebar">
-        <a class="active" href="index.html">Főoldal</a>
-        <a href="keplink.html">Képlink feladat</a>
-        <a href="listak.html">Listák feladat</a>
-        <a href="orarend.html">Órarend feladat</a>
-        <a href="evszakok.html">Évszakok feladat</a>
-        <a href="urlap.html">Űrlap</a>
+
+    <div class="hatter">
+    </div>
+
+    <div id="log" class="egesz">
+        <form action="javascript:void(0)">
+            <div class="gombok">
+                <button class="felso" id="aktiv">Bejeletkezés</button>
+                <button onclick="asd2()" class="felso" id="jel">Regisztráció</button>
+            </div>
+
+            <h1 style="text-align: center; letter-spacing: 2px;">Bejeletkezés</h1>
+
+            <input type="text" id="user" placeholder="Add meg a felhasználóneved!" required> <br>
+            <input type="password" name="" id="password" placeholder="Add meg a jelszavad!" required> <br>
+            <button class="alsogomb" onclick="log(user.value, password.value)" type="submit">Bejeletkezés</button>
+            
+        </form>
     </div>
 
 
 
+    <div id="reg" class="egesz">
+        <form action="javascript:void(0)">
+            <div class="gombok">
+                <button onclick="asd()" class="felso" id="bej">Bejeletkezés</button>
+                <button class="felso" id="jel">Regisztráció</button>
+            </div>
+            <h1 style="text-align: center; letter-spacing: 2px;">Regisztráció</h1>
 
-    <div class="content">
-        <div class="fejlec">
-            <h1 class="kozep">Trencsánszky Patrik oldala!</h1>
-        </div>
-        <div style="overflow-x:auto;">
-            <img id="kollazs" src="img/collage.jpg" class="center">
-        </div>
+            <input type="text" id="user" placeholder="Add meg a felhasználóneved!" required> <br>
+            <input type="password" name="" id="psw" placeholder="Add meg a jelszavad" required> <br>
+            <input type="password" name="" id="psw2" placeholder="Add meg a jelszavad mégegyszer" required> <br>
+            <button onclick="reg(user.value, psw.value, psw2.value)" class="alsogomb" type="submit">Regisztráció</button>
+
+        </form>
     </div>
 
-    <div class="footer">
-        <p>Copyright 🂱 TP ©</p>
-    </div>
+
+    <script src="js/bejelentkezes.js"></script>
+
 </body>
 
 </html>

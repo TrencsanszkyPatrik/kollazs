@@ -1,0 +1,81 @@
+
+.hatter{
+  position: absolute;;
+  background-image: url(mountains-1412683.png);
+  background-size:     cover;     
+  background-repeat:   no-repeat;
+  background-position: center center;     
+  opacity: 0.7;      
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+h1{
+  font-size: 3vw;
+}
+
+.felso {
+  background-color: #a3a2a2;
+  width: 50%;
+  transition: .4s;
+  display: inline;
+  font-size: 3vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 2vw;
+  border: 1px rgb(160, 0, 0) solid;
+}
+
+.felso:hover {
+  background-color: #d5d4d4;
+}
+
+div.gombok {
+  display: flex;
+  padding: 0;
+}
+
+input {
+  margin: 1vw auto 0 auto;
+  width: 50%;
+  height: 2vw;
+  border-radius: 4%;
+  border: #acaaaa 2px solid;
+  display: block;
+}
+
+.alsogomb {
+  margin: 0 auto 20px auto;
+  display: block;
+  padding: 1vw;
+  width: 20vw;
+  font-size: 1.2vw;
+  border-radius: 4%;
+  transition: 1s;
+  border: #acaaaa 2px solid;
+}
+
+.alsogomb:hover {
+  background-color: #a3a2a2;
+}
+
+#aktiv {
+  background-color: #d5d4d4;
+}
+
+.egesz {
+  width: 50vw;
+  height: fit-content;
+  background-color: whitesmoke;
+  border-radius: 1%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+} 
+
+#reg {
+  display: none;
+}
