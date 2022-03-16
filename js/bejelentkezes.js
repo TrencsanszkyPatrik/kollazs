@@ -1,7 +1,3 @@
-var nev = localStorage.getItem('username')
-var jelszo = localStorage.getItem('password')
-
-
 function reg(name, pass, pass2) {
     if (localStorage.getItem('regisztralva') != "igen") {
 
@@ -21,17 +17,17 @@ function reg(name, pass, pass2) {
 
 
 function log(name, pass){
-    if (nev == name && jelszo == pass){
+    if (localStorage.getItem('username') == name && localStorage.getItem('password') == pass){
         alert("Sikeres bejelentkezés")
         window.open('fooldal.html', "_self")
     } else {
         alert('Hiányzó adatok!')
     }
 }
-
+    
 
 function elfelejtett(){
-    alert('Felhasználó neved: ' + nev + '\nJelszavad: ' + jelszo)
+    alert('Felhasználó neved: ' + localStorage.getItem('username') + '\nJelszavad: ' + localStorage.getItem('password'))
 }
 
 function torles() {
