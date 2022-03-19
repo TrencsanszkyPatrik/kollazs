@@ -5,6 +5,7 @@ function reg(name, pass, pass2) {
             localStorage.setItem('username', name)
             localStorage.setItem('password', pass)
             localStorage.setItem('regisztralva', 'igen')
+            alert('Sikeresen regisztráltál!')
         }
         else if (pass != pass2) {
             alert("Nem egyezik a két jelszó")
