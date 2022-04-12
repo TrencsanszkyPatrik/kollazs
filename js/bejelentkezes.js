@@ -20,6 +20,8 @@ function reg(name, pass, pass2) {
 function log(name, pass){
     if (localStorage.getItem('username') == name && localStorage.getItem('password') == pass){
         alert("Sikeres bejelentkezés")
+        sessionStorage.setItem('username', name)
+        sessionStorage.setItem('password', pass)
         window.open('fooldal.html', "_self")
     } else {
         alert('Hiányzó adatok!')

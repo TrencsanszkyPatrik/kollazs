@@ -48,7 +48,7 @@
 
 </head>
 
-<body>
+<body onload="torleees()">
 
 
 
@@ -76,22 +76,24 @@
         <div style="overflow-x:auto;">
             <center>
 
-                <button onclick="kosarba('cipo1')"><img id="cipo1"
+                <button onclick="kosarba('NikeDunkLow')"><img id="cipo1"
                         src="https://images.stockx.com/images/Nike-Dunk-Low-White-Black-2021-W-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=webp&auto=compress&q=90&dpr=1&trim=color&updated_at=1611766850"
                         alt=""><br> Termék 1</button>
-                <button onclick="kosarba('cipo2')"><img id="cipo2"
+                <button onclick="kosarba('Air_Jordan_4_Retro')"><img id="cipo2"
                         src="https://images.stockx.com/images/Air-Jordan-4-Retro-Lightning-2021-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=webp&auto=compress&trim=color&q=90&dpr=1&updated_at=1633023947"
                         alt=""><br>Termék 2</button>
-                <button onclick="kosarba('cipo3')"><img id="cipo3"
+                <button onclick="kosarba('Adidas_Yeezy_Slide_Glow')"><img id="cipo3"
                         src="https://images.stockx.com/images/adidas-Yeezy-Slide-Glow-Green-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=webp&auto=compress&trim=color&q=90&dpr=1&updated_at=1633023465"
                         alt=""><br>Termék 3</button> <br><br>
                 <button onclick="torles()">TÖRLÉS</button><br><br>
                 <button onclick="kosar()">KOSÁR</button>
+                <p id="asd"></p>
         
                 <script src="js/script.js"></script>
+                <script src="js/atrak.js"></script>
         
-                <table border="2px" id='table'></table>
-        
+                <table border="1px" id='table'></table>
+                    <button onclick="atrak()">Vásárlás</button>
             </center>
         
         </div>
