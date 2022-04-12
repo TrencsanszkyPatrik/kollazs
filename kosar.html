@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
 
     <title>Kosár</title>
     <style>
@@ -31,25 +32,60 @@
 </head>
 
 <body>
-    <center>
 
-        <button onclick="kosarba('cipo1')"><img id="cipo1"
-                src="https://images.stockx.com/images/Nike-Dunk-Low-White-Black-2021-W-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=webp&auto=compress&q=90&dpr=1&trim=color&updated_at=1611766850"
-                alt=""><br> Termék 1</button>
-        <button onclick="kosarba('cipo2')"><img id="cipo2"
-                src="https://images.stockx.com/images/Air-Jordan-4-Retro-Lightning-2021-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=webp&auto=compress&trim=color&q=90&dpr=1&updated_at=1633023947"
-                alt=""><br>Termék 2</button>
-        <button onclick="kosarba('cipo3')"><img id="cipo3"
-                src="https://images.stockx.com/images/adidas-Yeezy-Slide-Glow-Green-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=webp&auto=compress&trim=color&q=90&dpr=1&updated_at=1633023465"
-                alt=""><br>Termék 3</button> <br><br>
-        <button onclick="torles()">TÖRLÉS</button><br><br>
-        <button onclick="kosar()">KOSÁR</button>
 
-        <script src="script.js"></script>
 
-        <table border="2px" id='table'></table>
+    <div class="sidebar">
+        <a class="active" href="index.html">Főoldal</a>
+        <a href="keplink.html">Képlink feladat</a>
+        <a href="listak.html">Listák feladat</a>
+        <a href="orarend.html">Órarend feladat</a>
+        <a href="evszakok.html">Évszakok feladat</a>
+        <a href="urlap.html">Űrlap feladat</a>
+        <a href="gomb.html">Gomb feladat</a>
+        <a href="javascript.html">Javascriptes feladat</a>
+        <a href="kosar.html">Kosár feladat</a>
+        <a href="pita.html">Pitagorasz feladat</a>
+        <a href="tablazat.html">Táblázat feladat</a>
+    </div>
 
-    </center>
+
+
+
+    <div class="content">
+        <div class="fejlec">
+            <h1 class="kozep">Trencsánszky Patrik oldala!</h1>
+        </div>
+        <div style="overflow-x:auto;">
+            <center>
+
+                <button onclick="kosarba('cipo1')"><img id="cipo1"
+                        src="https://images.stockx.com/images/Nike-Dunk-Low-White-Black-2021-W-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=webp&auto=compress&q=90&dpr=1&trim=color&updated_at=1611766850"
+                        alt=""><br> Termék 1</button>
+                <button onclick="kosarba('cipo2')"><img id="cipo2"
+                        src="https://images.stockx.com/images/Air-Jordan-4-Retro-Lightning-2021-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=webp&auto=compress&trim=color&q=90&dpr=1&updated_at=1633023947"
+                        alt=""><br>Termék 2</button>
+                <button onclick="kosarba('cipo3')"><img id="cipo3"
+                        src="https://images.stockx.com/images/adidas-Yeezy-Slide-Glow-Green-Product.jpg?fit=fill&bg=FFFFFF&w=140&h=75&fm=webp&auto=compress&trim=color&q=90&dpr=1&updated_at=1633023465"
+                        alt=""><br>Termék 3</button> <br><br>
+                <button onclick="torles()">TÖRLÉS</button><br><br>
+                <button onclick="kosar()">KOSÁR</button>
+        
+                <script src="js/script.js"></script>
+        
+                <table border="2px" id='table'></table>
+        
+            </center>
+        
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Copyright 🂱 TP ©</p>
+    </div>
+
+
+
 </body>
 
 </html>
