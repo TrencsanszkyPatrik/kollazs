@@ -42,6 +42,8 @@ var Adidas_Yeezy_Slide_Glow = 100000;
         list += "<tr> <th>Összesen: </th> <th> </th> <th>" + ossz + " Ft" + "</th></tr>"
         
     document.getElementById('table').innerHTML = list
+    document.getElementById('table').style.display = 'table'
+    
     }
 
 

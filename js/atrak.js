@@ -8,5 +8,9 @@ if (felhasznalonev != null && jelszo != null) {
 function atrak(){
     localStorage.setItem('username', felhasznalonev2)
     localStorage.setItem('password', jelszo2)
-    alert('sikeres vasarlas')
+}
+
+function vasarlas(){
+    alert('Sikeres vásárlás');
+    window.open('fooldal.html', '_self');
 }
