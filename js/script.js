@@ -4,8 +4,9 @@ if (felhasznalonev != null && jelszo != null) {
 sessionStorage.setItem('username', felhasznalonev)
 sessionStorage.setItem('password', jelszo)
 }
+
 function torleees(){
-localStorage.clear('username'); localStorage.clear('password');
+localStorage.removeItem('username'); localStorage.removeItem('password');
 }
 
 var NikeDunkLow = 150000;
